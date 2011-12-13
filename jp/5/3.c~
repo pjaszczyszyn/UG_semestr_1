@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b, i = 1;
+
+
+    printf("Podaj 1 liczbę calkowitą: ");
+    scanf("%d", &a);
+
+    printf("Podaj 2 liczbę rzeczywistą większą od 1: ");
+    scanf("%d", &b);
+    b -= a;
+
+    while (i < b) {
+	++a;
+	printf("%d\n", a);
+	++i;
+    }
+    return 0;
+}

@@ -1,0 +1,37 @@
+#include <stdio.h>
+int wypisz(int a, int b);
+
+int main()
+{
+
+int a=1, i, j;
+
+int tablica1[4]={8,6,6,8};
+
+
+for (j=0; j<4; j++){
+int tablica2[7]={a,tablica1[0]-a,5-a,(6-(5-a))*2,5-a,tablica1[0]-a,a};
+for (i=0; i<7; i++){
+if(i%2==0)
+wypisz(tablica2[i],1);
+else
+wypisz(tablica2[i],0);
+}
+printf("\n");
+a++;
+}
+    return 0;
+
+}
+
+
+int wypisz(a, b){
+int i;
+for (i=0;i<a;i++){
+if(b==1)
+putchar('*');
+else
+putchar(' ');
+}
+return 0;
+}

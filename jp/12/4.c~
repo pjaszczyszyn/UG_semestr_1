@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+  int c;
+  int nb = 0;			/* liczba znaków odstępu */
+  int nt = 0;			/* liczba znaków tabulacji */
+  int nl = 0;			/* liczba znaków nowego wiersza */
+  int other = 0;                /* pozostałe znaki */
+
+  while ((c = fgetc(stdin)) != EOF) {
+    if (c == ' ')
+      nb++;
+    if (c == '\t')
+      nt++;
+    if (c == '\n')
+      nl++;
+    if (c != ' ' && c != '\t' && c != '\n')
+      other++;
+  }
+
+  printf("\nliczba znaków odstępu = %d,\ntabulacji = %d,\nnowego wiersza = %d\n\n", nb, nt, nl);
+  printf("pozostałe znaki: %d\n", other);
+
+  return 0;
+}

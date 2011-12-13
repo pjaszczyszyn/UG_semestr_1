@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float x, y, z, q, w;
+
+    printf("Wprowadź trzy liczby całkowite: ");
+    scanf("%f", &x);
+    scanf("%f", &y);
+    scanf("%f", &z);
+
+    if (x > y)
+	q = x;
+    else
+	q = y;
+    if (q < z)
+	q = z;
+
+    if (x > y)
+	w = y;
+    else
+	w = x;
+    if (w > z)
+	w = z;
+
+    printf("Suma wynosi %.0f \n", x + y + z);
+    printf("Iloczyn wynosi %.0f \n", x * y * z);
+    printf("Najmniejsza liczba to: %.0f \n", w);
+    printf("Największa liczba to: %.0f \n", q);
+
+    return 0;
+}
