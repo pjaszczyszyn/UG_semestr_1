@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-int clear_table_int(int *table, int size_table);
+void clear_table_int(int *table, int size_table);
 
 int main(int argc, char *argv[])
 {
@@ -56,10 +56,9 @@ int main(int argc, char *argv[])
     return 0;
 }
 
-int clear_table_int(int *table, int size_table)
+void clear_table_int(int *table, int size_table)
 {
     while (size_table-- > 0)
 	table[size_table] = 0;
 
-    return SUCCESS_EXIT;
 }
