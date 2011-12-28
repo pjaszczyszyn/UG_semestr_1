@@ -1,24 +1,24 @@
 #include<stdio.h>
+#include <math.h>
 
+void wypisz_pierw(double ile);
 int main()
 {
+    double a;
 
-  int n, i, count = 0, j;
+    a = 20;
+    wypisz_pierw(a);
 
-n=0
-    while (j<20){
-    for (i = 2; i <= n / 2; i++) {
-	if (n % i == 0) {
-	    count++;
-	    break;
-	}
-n++
-    }
-    if (count == 0 && n != 1){
-      printf("jest pierwsza: %d", i);
-    j++;
-    }
-
-    }
     return 0;
+}
+
+
+void wypisz_pierw(double ile)
+{
+    ++ile;
+    while (--ile) {
+
+        printf("%d\t%0.5f\n", (int) ile, sqrt(ile));
+
+    }
 }
