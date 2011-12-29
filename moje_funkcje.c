@@ -99,3 +99,19 @@ void pobierz_dwa_double(char *prompt, double *px, double *py) {
   scanf("%lf %lf", px, py);
 }
 
+
+/* f. sprawdza czy liczba zmiennoprzecinkowa "a" jest liczbą całkowitą
+działa tylko na liczbach nie większych od long long int */
+int czy_calkowita(double a)
+{
+    long long int temp;
+    double b;
+
+    temp = (long long int) a;
+    b = (double) temp;
+
+    if (a == b)
+        return 1;
+
+    return 0;
+}
