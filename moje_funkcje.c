@@ -42,6 +42,7 @@ void silnia_n_pierwszych(int x){
     }
 }
 
+/* zerowanie tablicy */
 void clear_table_int(int *table, int size_table)
 {
     while (size_table-- > 0)
@@ -58,9 +59,9 @@ int czy_to_znak(int a)
 
 void wypisz_n_znakow(int n, char *znak)
 {
-    ++n;
-    while (--n)
-        printf(znak);
+
+    while (n--)
+    printf(znak);
     printf("\n");
 }
 
@@ -76,7 +77,7 @@ void wypisz_znaki_ascii(int a)
         printf("\\r");
     else if (a == '\f')
         printf("\\f");
-    else if (a == 32)
+    else if (a == ' ')
         printf("spacja");
     else
         printf("%c", a);
@@ -84,8 +85,8 @@ void wypisz_znaki_ascii(int a)
     printf("\t");
 }
 
-/* pobierz dane - uzycie w programie:
-pobierz_wynik("Odp: ", &c)
+/* pobierz_libcze - uzycie w programie:
+pobierz_libcze("Odp: ", &c)
  - pobiera wpisaną wartość do c */
 
  void pobierz_libcze(char *prompt, int *px)
