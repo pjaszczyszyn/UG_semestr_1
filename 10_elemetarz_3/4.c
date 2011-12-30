@@ -57,8 +57,8 @@ int czy_to_znak(int a)
 
 void wypisz_n_znakow(int n, char *znak)
 {
-    ++n;
-    while (--n)
+
+    while (n--)
     printf(znak);
     printf("\n");
 }
@@ -75,7 +75,7 @@ void wypisz_znaki_ascii(int a)
         printf("\\r");
     else if (a == '\f')
         printf("\\f");
-    else if (a == 32)
+    else if (a == ' ')
         printf("spacja");
     else
         printf("%c", a);
