@@ -40,9 +40,8 @@ int main(int argc, char *argv[])
 
     formaty = wczytaj_formaty(in_handle);
 	
-    printf("%s %s\n", formaty.wej.a, formaty.wej.b);
-    printf("%s %s\n", formaty.wyj.a, formaty.wyj.b);
-	
+    printf("Format wejściowy: %s %s\n", formaty.wej.a, formaty.wej.b);
+    printf("Format wyjściowy: %s %s\n\n", formaty.wyj.a, formaty.wyj.b);
 
     wypisz_dane(in_handle, formaty);
 
@@ -58,8 +57,7 @@ wiersz_t to_wiersz_struct(string format_in)
     p1 = FindChar(' ', format_in, 0);
     p2 = StringLength(format_in);
     format.a = SubString(format_in, 0, p1);
-    ++p1;
-    format.b = SubString(format_in, p1, p2);
+    format.b = SubString(format_in, p1+1, p2);
 
     return format;
 }
@@ -119,7 +117,9 @@ void wypisz_dane(FILE * in_handle, formaty_t formaty)
             printf(formaty.wyj.a, StringToInteger(dane.a));
             break;
         }
-
+		
+		printf("\t");
+			
         switch (sprawdz_format(formaty.wyj.b)) {
         case 1:
             /* printf(formaty.wyj.b, StringToLongReal(dane.b)); */
