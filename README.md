@@ -1,4 +1,4 @@
-`git init` stworzy lokalne repozytorium
+`git init` stworzy lokalne repozytorium 
 
 `git add .` dodaje wszystkie pliki do aktualizacji
 
@@ -6,7 +6,11 @@
 
 `git commit -a -m "usunieto niepotrzebne pliki"` flaga -a musi być przed -m działa także na usuniete pliki – komentarz jest na folderze
 
+
+
 `git remote add origin git@github.com:pjaszczyszyn/UG_semestr_1.git` tworzymy skrót „origin” adresu  repozytorium na githubie 
+
+
 
 `git remote rename origin ug` zmiana nazwy skrótu z origin na ug
 
@@ -16,9 +20,13 @@
 
 `git remote show ug` sprawdzenie jakie skróty mamy dodane
 
+
+
 `git push -u origin master` wrzucamy pliki do repo na githubie na branch „master”
 
 `git push origin master` także usunie pliki, które zostały usuniete z komputera
+
+
 
 `git log ` sprawdzamy historie zmian
 
@@ -29,8 +37,14 @@
 `git status` sprawdzamy zmiany
 
 
+
+
+
 Po dodaniu pliku:
+
 -----------------
+
+
 
 `git st` sprawdzamy status git-a
 
@@ -46,28 +60,56 @@ Po dodaniu pliku:
 
 
 
+
+
+
+
 MOJE USTAWIENIA GIT-a (plik .gitconfig):
 
+
+
 [alias]
+
        br = branch -a
+
         co = checkout
+
         ci = commit
+
         df = diff
+
         lg = log -p
+
         lol = log --graph --decorate --pretty=oneline --abbrev-commit
+
         lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
         ls = ls-files
+
         st = status
+
 [color]
+
         branch = auto
+
         diff = auto
+
         status = auto
 
 
+
+
+
 MOJE USTAWIENIA BASH-a (plik .bashrc):
+
 alias l='ls -l'
+
 alias ll='ls -la'
+
 alias gb='git branch -a'
+
 alias gl='git log -p'
+
 alias gt='git status'
+
 alias gp='git pull'
