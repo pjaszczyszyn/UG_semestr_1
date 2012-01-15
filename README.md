@@ -40,9 +40,7 @@
 
 
 
-Po dodaniu pliku:
-
------------------
+#Po dodaniu pliku:
 
 
 
@@ -64,11 +62,11 @@ Po dodaniu pliku:
 
 
 
-MOJE USTAWIENIA GIT-a (plik .gitconfig):
+#MOJE USTAWIENIA GIT-a (plik .gitconfig):
 
 
 
-[alias]
+        [alias]
 
        br = branch -a
 
@@ -88,7 +86,7 @@ MOJE USTAWIENIA GIT-a (plik .gitconfig):
 
         st = status
 
-[color]
+        [color]
 
         branch = auto
 
@@ -100,16 +98,16 @@ MOJE USTAWIENIA GIT-a (plik .gitconfig):
 
 
 
-MOJE USTAWIENIA BASH-a (plik .bashrc):
+#MOJE USTAWIENIA BASH-a (plik .bashrc):
 
-alias l='ls -l'
+        alias l='ls -l'
 
-alias ll='ls -la'
+        alias ll='ls -la'
 
-alias gb='git branch -a'
+        alias gb='git branch -a'
 
-alias gl='git log -p'
+        alias gl='git log -p'
 
-alias gt='git status'
+        alias gt='git status'
 
-alias gp='git pull'
+        alias gp='git pull'
