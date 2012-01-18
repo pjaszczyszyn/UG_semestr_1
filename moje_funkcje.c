@@ -118,14 +118,9 @@ int czy_calkowita(double a)
 }
 
 
-/* funkcja sortuje tablice wg:
-jesli tablica[n] > tablica [n+1]
-to zamien miejscami i sprawdz czy:
-tablica[n-1] > tablica [n]
-jesli tak to zamien miejscami i powtorz.
+/* funkcja sortuje tablice
 
-pesymistyczna złożoność czasowa funkcji: O( ((n^2)-n)/2 )
-optymistyczna O(n)
+funkcja gnome sort w wersji rekurencyjnej
 funkcja nadaje sie do sortowania wstepnie juz posortowanych tablic
 
 narazie funkcje trzeba uzyc w petli while
