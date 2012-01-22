@@ -116,3 +116,34 @@ int czy_calkowita(double a)
 
     return 0;
 }
+
+
+/* funkcja sortuje tablice
+
+funkcja gnome sort w wersji rekurencyjnej
+funkcja nadaje sie do sortowania wstepnie juz posortowanych tablic
+
+narazie funkcje trzeba uzyc w petli while
+*/
+
+int sortuj_tablice(int **tablica_wsk, int tablica_size,
+    	     int poz)
+{
+    int *temp;
+    int poz2 = poz + 1;
+
+    if (tablica_size == poz2) {
+	return 0;
+    } else
+	if (*tablica_wsk[poz] > *tablica_wsk[poz2]) {
+	    temp = tablica_wsk[poz];
+	    tablica_wsk[poz] = tablica_wsk[poz2];
+	    tablica_wsk[poz2] = temp;
+
+	    if (poz)
+	    posortuj_tablice(tablica_wsk, tablica_size, poz - 1);
+
+	    return 1;
+	}
+return 1;
+}
