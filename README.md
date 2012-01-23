@@ -6,7 +6,7 @@
 
 `git commit -a -m "usunieto niepotrzebne pliki"` flaga -a musi być przed -m działa także na usuniete pliki – komentarz jest na folderze
 
-
+`git commit --interavtive` interaktywne dodawanie i komentowanie commitów plików 
 
 `git remote add origin git@github.com:pjaszczyszyn/UG_semestr_1.git` tworzymy skrót „origin” adresu  repozytorium na githubie 
 
