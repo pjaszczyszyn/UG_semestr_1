@@ -111,3 +111,6 @@
         alias gt='git status'
 
         alias gp='git pull'
+        
+#Dodatkowe
+        `git diff HEAD`
