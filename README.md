@@ -113,4 +113,14 @@
         alias gp='git pull'
         
 #Dodatkowe
-        `git diff HEAD`
+        `git diff HEAD
+        git diff --sta­ged
+        git check­out -- octoc­at.txt
+        
+        git branc­h clean­_up` nowa gałąź
+        git check­out clean­_up - przełączamy się na gałąź clean_up
+        git check­out -b clean_up
+        
+        
+        git check­out master - przechodzimy na master
+        git merge clean_up - łączymy master z clean_up
